@@ -1,12 +1,11 @@
 import * as React from 'react';
+import AddTodo from './containers/AddTodo'
 
 function App(){
 
-  let x : number = 5
-
   return (
     <div>
-
+      <AddTodo/>
     </div>
   );
 }
