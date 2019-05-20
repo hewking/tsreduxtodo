@@ -18,7 +18,7 @@ let AddTodo = (props : AddTodoProps) => {
                 if (!input.value.trim()) {
                     return
                 }
-                dispatch(addTodo)
+                dispatch(addTodo(input.value))
                 input.value = ''
             }}
         >

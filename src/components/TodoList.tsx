@@ -9,10 +9,15 @@ interface Props {
 
 const TodoList = (props : Props) => {
     let {todos,onTodoClick} = props
+    let todoViews = []
+    for (let todo of todos) {
+        todoViews.push(<Todo key = {todo.id} {...todo} onClick={() => onTodoClick(todo.id)}/>)
+    }
     return (<ul>
-        {todos.map(todo => {
+        {/* {todos.map(todo => {
            <Todo key = {todo.id} {...todo} onClick={() => onTodoClick(todo.id)}/>
-        })}
+        })} */}
+        {todoViews}
     </ul>)
 }
 

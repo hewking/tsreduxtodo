@@ -2,7 +2,8 @@ import {combineReducers} from 'redux'
 import todos from './todos'
 import visibilityFilter from './visibilityFIlter'
 const todoApp = combineReducers({
-    todos
+    todos,
+    visibilityFilter
 })
 
 export interface Todo {
