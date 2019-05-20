@@ -1,11 +1,14 @@
-
 import {combineReducers} from 'redux'
 import todos from './todos'
-const todoApp = combineReducers(todos)
+import visibilityFilter from './visibilityFIlter'
+const todoApp = combineReducers({
+    todos
+})
 
 export interface Todo {
-    completed : boolean
+    id :number,
+    completed : boolean,
+    text : string
 }
-
 
 export default todoApp
