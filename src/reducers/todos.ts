@@ -17,7 +17,7 @@ const todos :Reducer<Todo[], any> = (state: Todo[] = [],action) => {
                 todo.completed = !todo.completed
             }
         }
-        return state
+        return [...state]
         default:
         return state
     }  
