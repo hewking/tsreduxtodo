@@ -1,0 +1,15 @@
+// styles.scss
+// @use 'base';
+
+
+// .inverse {
+//   background-color: base.$primary-color;
+//   color: white;
+// }
+
+@import './color/colors.scss';
+@import './core/base';
+
+.test {
+  color: $primary-color;
+}
